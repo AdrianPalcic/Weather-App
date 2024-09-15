@@ -96,7 +96,8 @@ body {
 @media (max-width: 477px) {
     .search {
         display:flex;
-        flex-direction:column
+        flex-direction:column;
+        justify-content:center;
     }
     .search button {
         width:80%;
