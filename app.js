@@ -18,17 +18,17 @@ async function checkWeather(city) {
 
     
 
-        if (data.weather[0].main = "Thunderstorm") {
+        if (data.weather[0].main === "Thunderstorm") {
             weatherIcon.classList.replace("fa-cloud-sun-rain", "fa-cloud-bolt");
-        } else if (data.weather[0].main = "Drizzle") {
+        } else if (data.weather[0].main === "Drizzle") {
             weatherIcon.classList.replace("fa-cloud-sun-rain", "fa-droplet");
-        } else if (data.weather[0].main = "Rain") {
+        } else if (data.weather[0].main === "Rain") {
             weatherIcon.classList.replace("fa-cloud-sun-rain", "fa-cloud-showers-heavy");
-        } else if (data.weather[0].main = "Snow") {
+        } else if (data.weather[0].main === "Snow") {
             weatherIcon.classList.replace("fa-cloud-sun-rain", "fa-snowflake");
-        } else if (data.weather[0].main = "Atmosphere" || "Clouds") {
+        } else if (data.weather[0].main === "Atmosphere" || "Clouds") {
             weatherIcon.classList.replace("fa-cloud-sun-rain", "fa-cloud");
-        } else if (data.weather[0].main = "Clear") {
+        } else if (data.weather[0].main === "Clear") {
             weatherIcon.classList.replace("fa-cloud-sun-rain", "fa-sun");
         }
     
